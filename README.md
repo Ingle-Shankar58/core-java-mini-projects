@@ -1,21 +1,74 @@
-<div align="center">
+💼 Employee Management System (Java Console)
+Overview
 
-<h1>💼 Employee Management System</h1>
+Java Console-Based Employee Management System
 
-<p><b>Java Console-Based CRUD Application | MVC Architecture</b></p>
+Uses OOP + MVC Architecture
 
-<img src="https://img.shields.io/badge/Java-Project-orange?style=for-the-badge">
-<img src="https://img.shields.io/badge/OOPs-Inheritance-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/MVC-Architecture-green?style=for-the-badge">
+Supports CRUD Operations (Add, Search, Update, Delete, Display All)
 
-</div>
+Employee Types: HR, Admin, Sales Manager
 
----
+Project Structure
+src/
+├─ Model/       (Employee, HR, Admin, SalseManager)
+├─ Controller/  (EmployeeContrilar, EmployeeDAO)
+├─ View/        (EmployeeView)
+└─ TestClass/   (TestApp)
 
-## 🚀 Project Overview
-Employee Management System is a **console-based Java application** used to manage different types of employees such as **HR**, **Admin**, and **Sales Manager**.  
-It supports **CRUD operations** (Create, Read, Update, Delete) and displays records using a **menu-driven system**.
+Features
 
----
+Add Employee (HR/Admin/SalesManager)
 
-## 🏗 Project Architecture (MVC)
+Search Employee by ID
+
+Update Salary
+
+Delete Employee by ID
+
+Display All Employees (Menu-Driven)
+
+Employee Types
+Type	Extra Field
+HR	Commission
+Admin	Allowance
+Sales Manager	Incentive
+Sample Console Menu
+1. Add Employee
+2. Search Employee
+3. Update Employee
+4. Delete Employee
+5. View All Employee
+Enter Choice ==>
+
+Delete Logic (Working)
+for (int i = 0; i < count; i++) {
+    if (eArr[i].getId() == id) {
+        for (int j = i; j < count - 1; j++) eArr[j] = eArr[j + 1];
+        eArr[--count] = null;
+        return true;
+    }
+}
+return false;
+
+How to Run
+
+Import project in IDE (Eclipse/IntelliJ/VS Code)
+
+Run TestApp.java
+
+Operate via console menu
+
+Future Enhancements
+
+Replace Array with ArrayList / DB
+
+JDBC Database Integration
+
+GUI using Swing / JavaFX
+
+Add Authentication & Unit Tests
+
+Author
+
+Shankar Ingle – Java | OOP | SQL | Mini Project Developer
