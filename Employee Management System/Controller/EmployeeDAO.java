@@ -68,7 +68,7 @@ public class EmployeeDAO {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < count; i++) {
             if (eArr[i].getId() == id) {
-                for (int j = i; j < count; j++) {
+                for (int j = i; j < count-1; j++) {
                     eArr[j] = eArr[j + 1];
                 }
                 eArr[--count] = null;
@@ -87,3 +87,4 @@ public class EmployeeDAO {
 	}
 
 }
+
